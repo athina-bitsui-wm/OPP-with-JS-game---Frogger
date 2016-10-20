@@ -6,8 +6,8 @@
  */
 function Game () {
     var resourceCache = {};
-    var loading = [];///Arcade Game | udacity project - CodePen
-    //codepen.io/makkBit/pen/dXdbmr
+    var loading = [];
+    //Arcade Game | udacity project - CodePen--]
     var readyCallbacks = [];
 
     /* This is the publicly accessible image loading function. It accepts
