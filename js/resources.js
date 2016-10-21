@@ -7,7 +7,6 @@
 function Game () {
     var resourceCache = {};
     var loading = [];
-    //Arcade Game | udacity project - CodePen--]
     var readyCallbacks = [];
 
     /* This is the publicly accessible image loading function. It accepts
@@ -17,9 +16,6 @@ function Game () {
     function load(urlOrArr) {
         if(urlOrArr instanceof Array) {
 
-            /*for (var j = 0; j < myArray.length; j++){
-                console.log(myArray[j].x);
-            }*/
             /* If the developer passed in an array of images
              * loop through each value and call our image
              * loader on that image file
