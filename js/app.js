@@ -8,7 +8,7 @@ var Enemy = function(locX, locY) {
     this.x = locX;
     this.y = locY;
 };
-
+var level = 1;
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
@@ -48,13 +48,9 @@ Enemy.prototype.update = function(dt) {
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-
-// Draw the enemy on the screen, required method for game
-Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
 //--------------------------------------------------------------------------------------------------------------------//
-var Player = function(player) {
+var Player = function(x, y) {
+    this.sprite = 'images/char-boy.png';
     this.x = x;
     this.y = y;
 };
@@ -73,7 +69,7 @@ Player.prototype.update = function(dt) {
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-Player.prototype.handleInput = function() {
+Player.prototype.handleInput = function(rcv) {
     if( rcv === 'left' && this.x > 0 )
         this.x = this.x - 20;
     else if( rcv === 'right' && this.x < 400)

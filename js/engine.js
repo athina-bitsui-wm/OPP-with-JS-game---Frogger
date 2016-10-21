@@ -159,9 +159,9 @@ var Engine = (function(global) {
      * those sorts of things. It's only called once by the init() method.
      */
     function reset() {
-        // noop
+        // noop- this i don't know.
+        //document.reset(); //i don't if this dose even work. but i hope it works.
     }
-
     /* Go ahead and load all of the images we know we're going to need to
      * draw our game level. Then set init as the callback method, so that when
      * all of these images are properly loaded our game will start.
@@ -181,3 +181,4 @@ var Engine = (function(global) {
      */
     global.ctx = ctx;
 })(this);
+
